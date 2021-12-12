@@ -1,55 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main.min.css" />
-		<title>Pay Api</title>
-	</head>
-	<body>
-		<!-- HEADER  -->
-		<header class="header">
-			<div class="container">
-				<a class="header__link" href="./index.html">
-					<img
-						src="https://via.placeholder.com/236x26"
-						alt="Coffee logo"
-						width="236"
-						height="26"
-					/>
-				</a>
-
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a class="nav__link" href="#">Home</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#">About us</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#">Craete your plan</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		<main>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.min.css" />
+	<title>Pay Api</title>
+</head>
+<body>
+	<!-- HEADER  -->
+	<header class="header">
+		<div class="container">
+			<a class="header__link__logo" href="./index.html">
+				<img
+				src="./images/header-logo.svg"
+				alt="Api logo"
+				width="135"
+				height="38"
+				/>
+			</a>
 			
-			<section class="choice">
-				<div class="container">
+			<button class="header__menu-button" type="button">
+				<span>&#9776;</span>
+				<span>&#x2715;</span>
+			</button>
+			
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="./pricing.html">Pricing</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./about.html">About</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./contact.html">Contact</a>
+					</li>
+				</ul>
 				
-
-					
-				</div>
-			</section>
-
+				<a class="header__link" href="#">
+					Schedule a Demo
+				</a>
+				
+			</nav>
+			
+		</div>
+		
+		<script src="./main.js"></script>
+	</header>
 	
-			 
-		</main>
+	<main>
+		
+		<section class="hero">
+			<div class="container">
+				
+				<img
+				class="hero__image"
+				src="./images/iphone.svg"
+				srcset="./images/2ximages/iphone@2x.png 2x"
+				alt="This text is written on the screen of mobile: The payment has been processed. The total amount deducted from your account is US $104.90."
+				width="419"
+				height="660"
+				>
+				
+				<div class="hero__info">
+					<h1 class="hero__heading">
+						Start building with our APIs for absolutely free.
+					</h1>
+					
+					<form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
+						<input class="hero__input" type="email" placeholder="Enter email address">
+						<button class="hero__form__button" type="submit">Schedule a Demo</button>
+					</form>
+					
+					<p 
+					class="hero__paragrahp">Have any questions? <strong 							  		class="hero__paragrahp__strong">Contact Us</strong>
+				</p>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<section class="partners">
+		
+		<div class="container">
+			
+			<ul class="partners__list">
+				<li class="partners__item">
+					<img class="partners__image" src="./images/tesla.svg" alt="Tesla' icon" width="129" height="17">
+				</li>
+				
+				<li class="partners__item">
+					<img class="partners__image" src="./images/microsoft.svg" alt="Microcost' icon" width="145" height="31">
+				</li>
+				
+				<li class="partners__item">
+					<img class="partners__image" src="./images/hp.svg" alt="Hellwet Packard' icon" width="140" height="27">
+				</li>
+				
+				<li class="partners__item">
+					<img class="partners__image" src="./images/oracle.svg" alt="Oracle' icon" width="131" height="17">
+				</li>
+				
+				<li class="partners__item">
+					<img class="partners__image" src="./images/google.svg" alt="Google' icon" width="96" height="33">
+				</li>
+				
+				<li class="partners__item">
+					<img class="partners__image" src="./images/nvidia.svg" alt="Nvidia' icon" width="137" height="26">
+				</li>
+			</ul>
+			
+			<div class="partners__info">
+				
+				<h2 class="partners__heading">
+					Who we work with
+				</h2>
+				
+				<p class="partners__paragrahp">
+					Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. 
+				</p>
+				
+				<a 
+				class="partners__link"
+				href="./contact.html">
+				About Us
+			</a>
+		</div>
+		
+	</div>
+	
+</section>
 
-		<footer></footer>
-	</body>
+<section class="implement">
+	
+	<div class="container">
+		<img 
+			class="implement__image"
+			src="./images/form-tag.png"
+			srcset="./images/form-tag.png 1x, ./images/2ximages/form-tag@2x.png 2x"
+			alt=""
+		>
+
+		<div class="implement__info">
+
+			<h2 class="implement__heading">
+				Easy to implement
+			</h2>
+
+			<p class="implement__paragrahp">
+				Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.
+			</p>
+
+		</div>
+
+	</div>
+	
+</section>
+
+</main>
+
+<footer></footer>
+</body>
 </html>
